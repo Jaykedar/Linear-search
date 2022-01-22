@@ -1,0 +1,17 @@
+def linearsearch():   
+    l=len(rollno)
+    key=int(input("Enter element to be searched"))
+
+    for i in range(0,l):
+        if(rollno[i]==key):
+            print("Element is found at location:",i)
+            flag=1
+            break
+        else:
+            flag=0
+    if(flag==0):
+        print("element not found")           
+
+
+rollno=[8,10,34,23,94,4,50,32,1]
+linearsearch()
